@@ -14,8 +14,10 @@ namespace Quiz.Global.SaveData{
         public string[] completedPack;
         public string[] completedLevel;
 
-        private string _selectedPack;
-        private string _selectedLevel;
+        [HideInInspector]
+        public string _selectedPack;
+        [HideInInspector]
+        public string _selectedLevel;
 
         private void Awake()
         {
